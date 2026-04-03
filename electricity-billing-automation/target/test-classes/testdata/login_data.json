@@ -1,0 +1,30 @@
+[
+  {
+    "testCase": "TC-1.1.1",
+    "description": "Valid login",
+    "mobile": "987654321",
+    "password": "123456",
+    "expectedStatus": 200
+  },
+  {
+    "testCase": "TC-1.1.4",
+    "description": "Wrong password",
+    "mobile": "987654321",
+    "password": "wrongpass999",
+    "expectedStatus": 401
+  },
+  {
+    "testCase": "TC-1.1.5",
+    "description": "Non-existent mobile",
+    "mobile": "0000000000",
+    "password": "123456",
+    "expectedStatus": 401
+  },
+  {
+    "testCase": "TC-1.1.8",
+    "description": "Non-collector employee",
+    "mobile": "987654323",
+    "password": "123456",
+    "expectedStatus": 401
+  }
+]

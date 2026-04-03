@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>TestNG:  2. Collector Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>2. Collector Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 26 16:46:12 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7497 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_015_SearchByMobile()'><b>TC_CUST_015_SearchByMobile</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Search by mobile='123' should return 200 matching customers</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_004_SearchByName()'><b>TC_CUST_004_SearchByName</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: search by name 'John' — should return matching customers</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_013_SearchBySupplyNumber()'><b>TC_CUST_013_SearchBySupplyNumber</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Search by name='ZONE-A-001' should return 200 matching houses</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_008_UnauthorizedSubZone()'><b>TC_CUST_008_UnauthorizedSubZone</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Sub-zone not assigned to collector should return 403 NO_ACCESS</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_012_SearchCustomersWithZone()'><b>TC_CUST_012_SearchCustomersWithZone</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Search with zone filter should return filtered results with 200</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_007_NoSubZones()'><b>TC_CUST_007_NoSubZones</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Employee with no sub-zones should return 403 NO_SUB_ZONES</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_017_CombinedSearch()'><b>TC_CUST_017_CombinedSearch</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Combined name + mobile search should return 200 results matching both</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_016_SearchByCustomerType()'><b>TC_CUST_016_SearchByCustomerType</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Search by customer_type='Commercial' should return 200 commercial customers</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_019_MissingRequestBody()'><b>TC_CUST_019_MissingRequestBody</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Empty body {} should return 400 MISSING_REQUEST_BODY</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_006_SearchBySupplyNumber()'><b>TC_CUST_006_SearchBySupplyNumber</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: search by supply number 'ZONE-A' — should return matching records</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_001_GetAllCustomers()'><b>TC_CUST_001_GetAllCustomers</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: employee_id only — should return all assigned customers with 200</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_003_FilterBySubZone()'><b>TC_CUST_003_FilterBySubZone</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: sub_zone_id provided — should return sub-zone customers with 200</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_010_LargeDatasetPagination()'><b>TC_CUST_010_LargeDatasetPagination</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Large dataset — should return paginated results with 200</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_014_SearchByPartnerName()'><b>TC_CUST_014_SearchByPartnerName</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Search by partner_name='John' should return 200 customers named John</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_011_SearchCustomersValid()'><b>TC_CUST_011_SearchCustomersValid</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Valid search term should return matching customers with 200</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_002_FilterByZone()'><b>TC_CUST_002_FilterByZone</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: zone_id provided — should return zone-filtered customers with 200</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_009_InvalidZoneId()'><b>TC_CUST_009_InvalidZoneId</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Invalid zone_id 'abc' should return 400 INVALID_PARAMETER</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_005_SearchByMobile()'><b>TC_CUST_005_SearchByMobile</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: search by mobile '12345' — should return matching customers</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+<tr>
+<td title='com.electricity.tests.CollectorTest.TC_CUST_018_NoResults()'><b>TC_CUST_018_NoResults</b><br>Test class: com.electricity.tests.CollectorTest<br>Test method: Non-matching search should return 200 with empty customers array</td>
+<td></td>
+<td>0</td>
+<td>com.electricity.tests.CollectorTest@235834f2</td></tr>
+</table><p>
+</body>
+</html>

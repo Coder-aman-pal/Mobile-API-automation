@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Electricity Meter Billing — Full API Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" name="4. Billing Tests(failed)" verbose="2">
+    <classes>
+      <class name="com.electricity.tests.BillingTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="TC_BILL_001_GenerateBillvalid"/>
+          <include name="suiteTeardown"/>
+          <include name="suiteSetup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.electricity.tests.BillingTest -->
+    </classes>
+  </test> <!-- 4. Billing Tests(failed) -->
+  <test thread-count="5" name="5. Payment Tests(failed)" verbose="2">
+    <classes>
+      <class name="com.electricity.tests.PaymentTest">
+        <methods>
+          <include name="TC_PAY_007_FullPaymentWithAllDiscountFields"/>
+          <include name="TC_PAY_5_6_1_approvePayment"/>
+          <include name="TC_PAY_002_PaymentWithDiscount"/>
+          <include name="suiteTeardown"/>
+          <include name="suiteSetup"/>
+          <include name="afterMethod"/>
+          <include name="_Payment_NOT_AUTHORIZED_5_1_6"/>
+          <include name="TC_PAY_009_CollectionSummaryMissingDate"/>
+          <include name="beforeMethod"/>
+          <include name="TC_PAY_001_ValidPaymentNoDiscount"/>
+          <include name="TC_PAY_5_8_1_postPaymentvalid"/>
+          <include name="overpayment_5_1_9_"/>
+          <include name="TC_PAY_5_7_1_rejectPaymentvalid"/>
+          <include name="TC_PAY_008_ValidCollectionSummary"/>
+        </methods>
+      </class> <!-- com.electricity.tests.PaymentTest -->
+    </classes>
+  </test> <!-- 5. Payment Tests(failed) -->
+</suite> <!-- Failed suite [Electricity Meter Billing — Full API Suite] -->

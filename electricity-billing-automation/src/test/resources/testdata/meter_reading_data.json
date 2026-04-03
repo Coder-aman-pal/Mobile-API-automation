@@ -1,0 +1,29 @@
+[
+  {
+    "testCase": "TC-3.1.1",
+    "description": "Valid reading - higher than previous",
+    "employee_id": 5,
+    "house_id": 59,
+    "new_reading": 440,
+    "reading_date": "2026-02-27",
+    "expectedStatus": 200
+  },
+  {
+    "testCase": "TC-3.1.2",
+    "description": "Reading lower than previous",
+    "employee_id": 5,
+    "house_id": 59,
+    "new_reading": 402,
+    "reading_date": "2026-02-27",
+    "expectedStatus": 400
+  },
+  {
+    "testCase": "TC-3.1.3",
+    "description": "Same reading as previous",
+    "employee_id": 5,
+    "house_id": 59,
+    "new_reading": 400,
+    "reading_date": "2026-02-27",
+    "expectedStatus": 400
+  }
+]
